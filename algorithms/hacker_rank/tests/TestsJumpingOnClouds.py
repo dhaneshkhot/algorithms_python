@@ -1,5 +1,5 @@
 import unittest
-from hacker_rank.JumpingOnClouds import JumpingOnClouds
+from algorithms.hacker_rank import JumpingOnClouds
 
 
 class TestsJumpingOnClouds(unittest.TestCase):

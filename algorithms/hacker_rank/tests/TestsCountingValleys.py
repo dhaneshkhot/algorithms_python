@@ -1,5 +1,5 @@
 import unittest
-from hacker_rank.CountingValleys import CountingValleys
+from algorithms.hacker_rank.CountingValleys import CountingValleys
 
 
 class TestsCountingValleys(unittest.TestCase):

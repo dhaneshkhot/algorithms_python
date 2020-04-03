@@ -1,5 +1,5 @@
 import unittest
-from codility_tests.OddOccurrencesInArray import OddOccurrencesInArray
+from algorithms.codility_tests import OddOccurrencesInArray
 
 
 class CyclicRotationTests(unittest.TestCase):

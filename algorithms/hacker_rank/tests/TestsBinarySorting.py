@@ -1,5 +1,5 @@
 import unittest
-from hacker_rank.BinarySorting import BinarySorting
+from algorithms.hacker_rank import BinarySorting
 
 
 class TestsBinarySorting(unittest.TestCase):

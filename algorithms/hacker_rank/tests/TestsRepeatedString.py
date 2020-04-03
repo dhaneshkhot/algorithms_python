@@ -1,5 +1,5 @@
 import unittest
-from hacker_rank.RepeatedString import RepeatedString
+from algorithms.hacker_rank.RepeatedString import RepeatedString
 
 
 class TestsRepeatedString(unittest.TestCase):

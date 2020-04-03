@@ -31,29 +31,30 @@ class SherlockMiniMax:
         return min(mini_max)
 
     def get_sherlock_mini_max_2(self, arr, p, q):
-        m = []
+        m = set([])
         i = 0
         arr.sort()
         while i+1 in range(len(arr)):
-            if (arr[i] + arr[i + 1]) % 2 == 0:
-                m.append((arr[i] + arr[i + 1]) // 2)
-            else:
-                m.append((arr[i] + arr[i + 1]) // 2)
-                m.append((arr[i] + arr[i + 1]) // 2 + 1)
+            mid_of_adjacent_elements = (arr[i] + arr[i + 1]) // 2
+            if (arr[i] + arr[i + 1]) % 2 == 0 and p <= mid_of_adjacent_elements <= q:
+                m.add(mid_of_adjacent_elements)
+            # elif p <= mid_of_adjacent_elements <= q:
+            #     m.add(mid_of_adjacent_elements)
+            #     m.add(mid_of_adjacent_elements + 1)
             i += 1
 
-        # print(m)
-        m.append(p)
-        m.append(q)
+        print(m)
+        m.add(p)
+        m.add(q)
 
-        m.sort()
+        m_sorted = sorted(m)
 
-        # print(m)
+        print(m_sorted)
 
         min_placeholder = -1
         ans = 0
 
-        for i in m:
+        for i in m_sorted:
             if p <= i <= q:
                 minimum = p + q
                 for j in arr:

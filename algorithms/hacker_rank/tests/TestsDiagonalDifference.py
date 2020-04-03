@@ -1,5 +1,5 @@
 import unittest
-from hacker_rank.DiagonalDifference import DiagonalDifference
+from algorithms.hacker_rank.DiagonalDifference import DiagonalDifference
 
 
 class TestsDiagonalDifference(unittest.TestCase):

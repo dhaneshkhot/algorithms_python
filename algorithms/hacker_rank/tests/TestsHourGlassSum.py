@@ -1,5 +1,5 @@
 import unittest
-from hacker_rank.HourGlassSum import HourGlassSum
+from algorithms.hacker_rank.HourGlassSum import HourGlassSum
 
 class TestHourGlassSum(unittest.TestCase):
 

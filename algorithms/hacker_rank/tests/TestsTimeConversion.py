@@ -1,5 +1,5 @@
 import unittest
-from hacker_rank.TimeConversion import TimeConversion
+from algorithms.hacker_rank.TimeConversion import TimeConversion
 
 
 class TestsTimeConversion(unittest.TestCase):

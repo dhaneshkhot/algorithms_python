@@ -1,5 +1,5 @@
 import unittest
-from hacker_rank.MaxOccuringCharacter import MaxOccuringCharacter
+from algorithms.hacker_rank.MaxOccuringCharacter import MaxOccuringCharacter
 
 
 class TestsMaxOccuringCharacter(unittest.TestCase):

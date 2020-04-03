@@ -1,5 +1,5 @@
 import unittest
-from hacker_rank.SherlockMiniMax import SherlockMiniMax
+from algorithms.hacker_rank import SherlockMiniMax
 
 
 class TestsSherlockMiniMax(unittest.TestCase):

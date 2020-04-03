@@ -1,5 +1,5 @@
 import unittest
-from hacker_rank.PairOfSocks import PairOfSocks
+from algorithms.hacker_rank import PairOfSocks
 
 
 class TestsPairOfSocks(unittest.TestCase):

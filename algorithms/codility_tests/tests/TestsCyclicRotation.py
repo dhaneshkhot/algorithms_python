@@ -1,5 +1,5 @@
 import unittest
-from codility_tests.CyclicRotation import CyclicRotation
+from algorithms.codility_tests import CyclicRotation
 
 
 class CyclicRotationTests(unittest.TestCase):

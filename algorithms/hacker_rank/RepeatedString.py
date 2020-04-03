@@ -18,3 +18,10 @@ class RepeatedString:
 
         char_count_in_total_string = char_count_in_original_string * str_repeated_count + char_count_in_tail_string
         return char_count_in_total_string
+
+
+if __name__ == '__main__':
+    print("Hello")
+    r = RepeatedString()
+    print(r.count_occurances_of_a_character("abcac", 10))
+5

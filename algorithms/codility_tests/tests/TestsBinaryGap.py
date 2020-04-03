@@ -1,5 +1,5 @@
 import unittest
-from codility_tests.BinaryGap import BinaryGap
+from algorithms.codility_tests.BinaryGap import BinaryGap
 
 
 class TestsBinaryGap(unittest.TestCase):
