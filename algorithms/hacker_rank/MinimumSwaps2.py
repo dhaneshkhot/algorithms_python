@@ -31,4 +31,3 @@ class MinimumSwaps2:
                 i += 1
         return swaps
 
-#  [7, 1, 3, 2, 4, 5, 6]

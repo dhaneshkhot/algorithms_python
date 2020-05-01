@@ -1,6 +1,13 @@
 class HourGlassSum:
-
+    # better way
     def hourglassSum(self, arr):
+        li = []
+        for i in range(len(arr)-2):
+            for j in range(len(arr)-2):
+                li.append(arr[i][j]+arr[i][j+1]+arr[i][j+2]+arr[i+1][j+1]+arr[i+2][j]+arr[i+2][j+1]+arr[i+2][j+2])
+        return max(li)
+
+    def hourglassSum2(self, arr):
         hourglass_sum = -1000
         hg_arr_size = 3
 

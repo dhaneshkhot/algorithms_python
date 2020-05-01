@@ -43,13 +43,10 @@ class SherlockMiniMax:
             #     m.add(mid_of_adjacent_elements + 1)
             i += 1
 
-        print(m)
         m.add(p)
         m.add(q)
 
         m_sorted = sorted(m)
-
-        print(m_sorted)
 
         min_placeholder = -1
         ans = 0
@@ -62,5 +59,4 @@ class SherlockMiniMax:
                 if minimum > min_placeholder:
                     min_placeholder = minimum
                     ans = i
-
         return ans
