@@ -8,6 +8,7 @@
 
 ### To get the test coverage in each module
 `pytest  --cov=algorithms tests`
+
 `pytest  --cov=miscelleneous tests`
 
 
