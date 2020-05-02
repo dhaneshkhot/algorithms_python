@@ -1,14 +1,16 @@
-import unittest
-from algorithms.hacker_rank.BinarySorting import BinarySorting
+import pytest
+from algorithms.hacker_rank.BinarySorting import BinarySorting, get_no_of_ones
 
 
-class TestsBinarySorting(unittest.TestCase):
-
-    def test_binary_sorting(self):
-        A = [7, 8, 5, 6]
-        test_binary_sorting = BinarySorting()
-        self.assertEqual(['1000', '0101', '0110', '0111'], test_binary_sorting.rearrange(A))
+@pytest.fixture(scope="module")
+def test_binary_sorting():
+    return BinarySorting()
 
 
-if __name__ == '__main__':
-    unittest.main()
+def test_rearrange(test_binary_sorting):
+    A = [7, 8, 5, 6]
+    assert ['1000', '0101', '0110', '0111'] == test_binary_sorting.rearrange(A)
+
+
+def test_get_no_of_ones():
+    assert 4 == get_no_of_ones("1111")

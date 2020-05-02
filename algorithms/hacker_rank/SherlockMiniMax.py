@@ -1,6 +1,6 @@
 class SherlockMiniMax:
 
-    def get_sherlock_mini_max(self, arr, p, q):
+    def get_sherlock_mini_max_2(self, arr, p, q):
         m_range = range(p, q + 1)
         m_min = []
         mini_max_dict = {}
@@ -30,7 +30,7 @@ class SherlockMiniMax:
 
         return min(mini_max)
 
-    def get_sherlock_mini_max_2(self, arr, p, q):
+    def get_sherlock_mini_max(self, arr, p, q):
         m = set([])
         i = 0
         arr.sort()

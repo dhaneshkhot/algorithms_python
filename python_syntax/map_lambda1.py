@@ -10,6 +10,6 @@ print(" ".join(r))
 """
 
 s = "hello   world  lol"
-for x in s[:].split():
+for x in s.split():
     s = s.replace(x, x.capitalize())
 print(s)

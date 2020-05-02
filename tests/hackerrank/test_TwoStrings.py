@@ -1,23 +1,31 @@
-import unittest
+import pytest
 from algorithms.hacker_rank.TwoStrings import TwoStrings
 
 
-class TestsTwoStrings(unittest.TestCase):
-
-    def test_do_they_share_common_substring_1(self):
-        s1 = "hello"
-        s2 = "world"
-
-        two_strings = TwoStrings()
-        self.assertEqual("YES", two_strings.do_they_share_common_substring(s1, s2))
-
-    def test_do_they_share_common_substring_2(self):
-        s1 = "hi"
-        s2 = "world"
-
-        two_strings = TwoStrings()
-        self.assertEqual("NO", two_strings.do_they_share_common_substring(s1, s2))
+@pytest.fixture(scope="module")
+def two_strings():
+    return TwoStrings()
 
 
-if __name__ == '__main__':
-    unittest.main()
+@pytest.mark.parametrize("s1, s2, expected", [
+    ("hello", "world", "YES"),
+    ("hi", "world", "NO")
+])
+def test_do_they_share_common_substring_1(two_strings, s1, s2, expected):
+    assert expected == two_strings.do_they_share_common_substring_1(s1, s2)
+
+
+@pytest.mark.parametrize("s1, s2, expected", [
+    ("hello", "world", "YES"),
+    ("hi", "world", "NO")
+])
+def test_do_they_share_common_substring_2(two_strings, s1, s2, expected):
+    assert expected == two_strings.do_they_share_common_substring_2(s1, s2)
+
+
+@pytest.mark.parametrize("s1, s2, expected", [
+    ("hello", "world", "YES"),
+    ("hi", "world", "NO")
+])
+def test_do_they_share_common_substring_3(two_strings, s1, s2, expected):
+    assert expected == two_strings.do_they_share_common_substring_3(s1, s2)

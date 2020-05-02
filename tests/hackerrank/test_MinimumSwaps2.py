@@ -8,6 +8,11 @@ class TestsMinimumSwaps2(unittest.TestCase):
         tests_minimum_swaps_2 = MinimumSwaps2()
         self.assertEqual(5, tests_minimum_swaps_2.get_minimum_swaps_to_sort_array(arr))
 
+    def test_get_minimum_swaps_to_sort_array_2(self):
+        arr = [7, 1, 3, 2, 4, 5, 6]
+        tests_minimum_swaps_2 = MinimumSwaps2()
+        self.assertEqual(5, tests_minimum_swaps_2.get_minimum_swaps_to_sort_array_2(arr))
+
 
 if __name__ == '__main__':
     unittest.main()

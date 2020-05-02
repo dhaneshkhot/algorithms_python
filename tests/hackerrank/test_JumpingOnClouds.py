@@ -1,14 +1,15 @@
-import unittest
+import pytest
 from algorithms.hacker_rank.JumpingOnClouds import JumpingOnClouds
 
 
-class TestsJumpingOnClouds(unittest.TestCase):
-
-    def test_jumps(self):
-        A = [0, 1, 0, 0, 0, 1, 0]
-        jumping_on_clouds = JumpingOnClouds()
-        self.assertEqual(3, jumping_on_clouds.count_jumps(A))
+@pytest.fixture(scope="module")
+def jumping_on_clouds():
+    return JumpingOnClouds()
 
 
-if __name__ == '__main__':
-    unittest.main()
+@pytest.mark.parametrize("A, expected", [
+    ([0, 1, 0, 0, 0, 1, 0], 3),
+    ([0, 1], 1)
+])
+def test_jumps(jumping_on_clouds, A, expected):
+    assert expected == jumping_on_clouds.count_jumps(A)

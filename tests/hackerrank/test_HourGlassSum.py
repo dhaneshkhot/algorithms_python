@@ -10,6 +10,12 @@ class TestHourGlassSum(unittest.TestCase):
         hour_glass_sum = HourGlassSum()
         self.assertEqual(19, hour_glass_sum.hourglassSum(arr))
 
+    def test_get_hour_glass_sum_2(self):
+        arr = [[1, 1, 1, 0, 0, 0], [0, 1, 0, 0, 0, 0], [1, 1, 1, 0, 0, 0], [0, 0, 2, 4, 4, 0], [0, 0, 0, 2, 0, 0],
+               [0, 0, 1, 2, 4, 0]]
+        hour_glass_sum = HourGlassSum()
+        self.assertEqual(19, hour_glass_sum.hourglassSum2(arr))
+
 
 if __name__ == '__main__':
     unittest.main()
