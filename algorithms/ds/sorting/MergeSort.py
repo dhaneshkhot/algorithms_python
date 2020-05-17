@@ -1,4 +1,4 @@
-#  O(n log2n)
+#  Avg: O(n log2n) (This is best worst case for sorting algorithm)
 def merge_sort(arr):
     if len(arr) > 1:
         mid = len(arr)//2

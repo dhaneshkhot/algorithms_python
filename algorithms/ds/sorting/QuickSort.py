@@ -1,7 +1,8 @@
 from random import randint
 
 
-#  O(n log2n)
+# Avg: O(n log2n) (This is best worst case for sorting algorithm)
+# worst-case scenario is theoretically O(n2) when the pivot is the smallest or largest value of the array
 def quick_sort(arr):
     if len(arr) < 2:
         return arr
