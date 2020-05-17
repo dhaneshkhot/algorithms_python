@@ -1,3 +1,4 @@
+#  O(n^2)
 def bubble_sort(arr):
     for i in range(len(arr)):
         is_sorted = True

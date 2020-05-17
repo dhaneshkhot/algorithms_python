@@ -5,6 +5,7 @@ from timeit import repeat
 from algorithms.ds.sorting.BubbleSort import bubble_sort
 from algorithms.ds.sorting.InsertionSort import insertion_sort
 from algorithms.ds.sorting.MergeSort import merge_sort
+from algorithms.ds.sorting.QuickSort import quick_sort
 
 
 def run_sorting_algorithm(algorithm, array_to_sort):
@@ -25,4 +26,5 @@ if __name__ == "__main__":
 
     run_sorting_algorithm(algorithm="bubble_sort", array_to_sort=arr)
     run_sorting_algorithm(algorithm="insertion_sort", array_to_sort=arr)
-
+    run_sorting_algorithm(algorithm="merge_sort", array_to_sort=arr)
+    run_sorting_algorithm(algorithm="quick_sort", array_to_sort=arr)

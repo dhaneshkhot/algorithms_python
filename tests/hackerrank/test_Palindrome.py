@@ -31,6 +31,10 @@ class TestPalidnrome(unittest.TestCase):
         p = Palindrome()
         self.assertEqual("tt", p.get_palindrome_substring("oabcattacocatmapc"))
 
+    def test_get_largest_palindrome_substring(self):
+        p = Palindrome()
+        self.assertEqual("tacocat", p.get_largest_palindrome_substring("tacocatac"))
+
 
 if __name__ == '__main__':
     unittest.main()
